@@ -1,3 +1,6 @@
+# java stuff
+*.class
+bin/*
 # Object files
 *.o
 *.ko

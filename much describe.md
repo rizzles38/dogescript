@@ -50,7 +50,7 @@ operators:
 *  minus ==> subtract
 *  times ==> multiply
 *  over ==> divide
-*  say ==> print a string by getting the ascii value of the least significant byte of each integer in an array
+*  speak ==> print a string by getting the ascii value of the least significant byte of each integer in an array
 *  show ==> print out an integer's numerical value
 *  hear ==> make an integer array assigning each byte from the current line to one of the integers in the array
 *  listen ==> parse the next integer from input

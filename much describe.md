@@ -1,5 +1,8 @@
 DOGEscript language description
 
+import statements start with such and end with a filename to import
+the import section must end with wow
+
 all variables are of type integer, integer array, or function
 variable declarations:
 much (varname) ==> declare int with name (varname)

@@ -6,15 +6,24 @@ much (varname) ==> declare int with name (varname)
 many (varname)s ==> declare int[] with name (varname)s
 arrays must have an s on the end of their name
 they can be filled using the is operator and simply numbers in a row, the last two separated by and
+characters in single quotes and strings in double quotes also work
 example:
 
     many numbers is 1 2 4 3 and 5
+    many helloworlds is "Hello World"
+    many swag is 's''w''a' and 'g'
 to use an array index use get. a get can also be an lvalue
 
-    much three 3
+    much three is 3
     much four
     four is get numbers three
     get numbers four is 10
+
+the functions give and take work like push and pop, poop is dequeue
+
+    give numbers 6
+    much one is poop numbers
+    much six is take numbers
 
 function declarations start with wow and end when the code is not indented as much
 for example:
@@ -50,4 +59,10 @@ syntax: each (varname) is
 
     each number is
       show number
+conditionals:
+the keyword is when
+
+    when number is 5
+      say "NUMBER IS 5"
+I will eventually add support for loading c functions and libraries to allow dogescript to be useful (hint: you will only be allowed to send integers between c and doge)
 

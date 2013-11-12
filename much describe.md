@@ -1,7 +1,7 @@
 DOGEscript language description
 
 import statements start with such and end with a filename to import
-the import section must end with wow
+the import section must end with okay
 
 all variables are of type integer, integer array, or function
 variable declarations:

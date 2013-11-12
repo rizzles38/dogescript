@@ -5,11 +5,15 @@ the import section must end with wow
 
 all variables are of type integer, integer array, or function
 variable declarations:
+
 much (varname) ==> declare int with name (varname)
+
 many (varname)s ==> declare int[] with name (varname)s
-arrays must have an s on the end of their name
-they can be filled using the is operator and simply numbers in a row, the last two separated by and
+
+arrays must have an s on the end of their name. They can be filled using the is operator and simply numbers in a row the last two separated by and
+
 characters in single quotes and strings in double quotes also work
+
 example:
 
     many numbers is 1 2 4 3 and 5
@@ -28,11 +32,12 @@ the functions give and take work like push and pop, poop is dequeue
     much one is poop numbers
     much six is take numbers
 
-function declarations start with wow and end when the code is not indented as much
+function declarations start with wow and end with okay
 for example:
 
     wow much out multiply much one much two is
       out is one times two
+      okay
 
 the function name is multiply and its return value is an integer named out with two integer arguments named one and two
 to call it simply have the all the return values followed by is followed by the function name followed by arguments
@@ -57,15 +62,20 @@ operators:
   
 
 loops:
+____
 the only loop is a for loop. this iterates through an array with name (varname)s and puts the sequential elements into a variable named (varname)
 syntax: each (varname) is
 
     each number is
       show number
+      okay
+the block ends with "okay"
 conditionals:
-the keyword is when
+___
+the keyword is when 
 
     when number is 5
       say "NUMBER IS 5"
+      okay
 I will eventually add support for loading c functions and libraries to allow dogescript to be useful (hint: you will only be allowed to send integers between c and doge)
 

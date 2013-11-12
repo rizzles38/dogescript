@@ -38,12 +38,13 @@ public class Interpret {
 		}
 		while(sc.hasNextLine()) {
 		  s = sc.nextLine();
-		  System.out.printf("%s\n",s);
 		  linenum++;
 		  if(s.startsWith("wow")) {
 		    addFunction(s,sc);
-		    System.out.printf("%s\n",functions.getLast().toString());
 		  }
+		}
+		for(Function fun:functions) {
+		  System.out.println(fun);
 		}
 	}
   private static void addFunction(String s, Scanner sc) {
@@ -86,6 +87,11 @@ public class Interpret {
           System.out.printf("much bad type. %s is not %s.\n", vname,vtype);
           System.exit(-1);
         }
+        vtype=st.nextToken();
+        if(!st.hasMoreTokens()) {
+          break;
+        }
+        vname=st.nextToken();
       }
     }
     s=sc.nextLine();
@@ -96,7 +102,6 @@ public class Interpret {
       linenum++;
     }
     Function f = new Function(new String(name),code,args.toArray(new String[args.size()]),rets.toArray(new String[rets.size()]));
-    System.out.println(f.toString());
     functions.add(f);
   }
 	

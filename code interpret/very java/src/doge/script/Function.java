@@ -13,6 +13,8 @@ public class Function {
     this.name=name;
     args=argnames.length;
     returns=retnames.length;
+    this.argnames=argnames;
+    this.returnnames=retnames;
     this.code=code;
   }
   public void call(VarContain args, VarContain rets) {
@@ -29,13 +31,13 @@ public class Function {
     }
   }
   public String toString() {
-    String s = "Function: Name: "+name+" args:";
+    String s = "Function:\n  Name: "+name+"\n  args: ";
     for(String a:argnames) {
-      s+=" "+a+" ";
+      s+=a+" ";
     }
-    s+="rets:";
+    s+="\n  rets: ";
     for(String r:returnnames) {
-      s+=" "+r+" ";
+      s+=r+" ";
     }
     return s;
   }

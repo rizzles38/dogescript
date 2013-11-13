@@ -39,6 +39,10 @@ public class Function {
     for(String r:returnnames) {
       s+=r+" ";
     }
+    s+="\n  Code:\n";
+    for(String c:code) {
+      s+="    "+c+"\n";
+    }
     return s;
   }
 }
